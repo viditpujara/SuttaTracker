@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rv.suttatracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo3"
+        android:label="Sutta Tracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SuttaTracker">
+        <activity android:name=".Design.activity_report"
+            android:parentActivityName=".Design.MainActivity"></activity>
+        <activity android:name=".Design.activity_report_data"
+            android:parentActivityName=".Design.activity_report"></activity>
+        <activity android:name=".Design.activity_data_entry"
+            android:parentActivityName=".Design.MainActivity" />
+        <activity android:name=".Design.activity_splash" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Design.MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

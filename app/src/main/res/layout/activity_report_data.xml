@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Design.activity_report_data"
+    android:orientation="vertical">
+
+    //header
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/logo3">
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sutta Tracker"
+            android:gravity="center"
+            android:textSize="20dp">
+        </TextView>
+
+    </LinearLayout>
+
+    //line
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/yellow_400"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    //detail
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        //name
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:text="Name:"
+                android:layout_marginLeft="10dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/reportName"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:paddingLeft="30dp"
+                android:text="Viraj">
+            </TextView>
+
+        </LinearLayout>
+
+        //contact
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:text="Contact no.:"
+                android:layout_marginLeft="10dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/reportContact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="30dp"
+                android:text="1234567890"
+                android:textSize="18dp"></TextView>
+
+        </LinearLayout>
+
+        //date
+
+
+
+    </LinearLayout>
+
+    //itemDetail
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/yellow_400">
+
+        <TextView
+            android:id="@+id/repDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Date"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/repTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Time"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/repCig"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Cigarette"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/repNec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_weight="1.5"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Tobacco">
+        </TextView>
+
+        <TextView
+            android:id="@+id/repPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Price">
+        </TextView>
+
+        <TextView
+            android:id="@+id/repTrip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="Trip">
+        </TextView>
+
+        <TextView
+            android:id="@+id/repPlace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Place">
+        </TextView>
+
+    </LinearLayout>
+
+    //itemrecycler
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/historydetail_rv_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    //line
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/yellow_400"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    //Total
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/totCig"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="15dp"
+            android:text="Cigarette"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/totNec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Tobacco">
+        </TextView>
+
+        <TextView
+            android:id="@+id/totPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Price">
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="15dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="15dp">
+        </TextView>
+
+    </LinearLayout>
+
+    //Button
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/historydetail_close"
+            android:layout_marginTop="25dp"
+            android:text="Close"
+            android:textColor="@color/black"
+            style="@style/report_button">
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>
